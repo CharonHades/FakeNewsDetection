@@ -7,8 +7,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the pre-trained model and vectorizer
-model = joblib.load('Model/logreg_model.pkl')
-vectorizer = joblib.load('Model/tfidf_vectorizer.pkl')
+model = joblib.load('Models/logreg_model.pkl')
+vectorizer = joblib.load('Models/tfidf_vectorizer.pkl')
 
 # Function to get the prediction
 def predict(text):
