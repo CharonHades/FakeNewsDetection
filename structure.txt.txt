@@ -1,0 +1,20 @@
+FakeNewsDetection/
+│
+├── data/
+│   ├── Fake.csv
+│   └── True.csv
+│
+├── app/
+│   └── streamlit_app.py
+│
+├── models/
+│   └── logreg_model.pkl
+│   └── tfidf_vectorizer.pkl
+│
+├── src/
+│   ├── preprocessing.py
+│   ├── train_model.py
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
