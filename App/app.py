@@ -12,7 +12,7 @@ try:
 except Exception as e:
     st.error(f"Error loading model: {e}")
 
-vectorizer = joblib.load('Models/tfidf_vectorizer.pkl')
+vectorizer = joblib.load('Model/tfidf_vectorizer.pkl')
 
 # Function to get the prediction
 def predict(text):
