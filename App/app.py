@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 # Load the pre-trained model and vectorizer
 try:
-    model = joblib.load('Models/logreg_model.pkl')
+    model = joblib.load('Model/logreg_model.pkl')
 except Exception as e:
     st.error(f"Error loading model: {e}")
 
