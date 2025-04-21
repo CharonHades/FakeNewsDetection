@@ -6,9 +6,19 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 
+<<<<<<< HEAD
 # Load model and vectorizer
 model = joblib.load('Models/logreg_model.pkl')
 vectorizer = joblib.load('Models/tfidf_vectorizer.pkl')
+=======
+# Load the pre-trained model and vectorizer
+try:
+    model = joblib.load('Model/logreg_model.pkl')
+except Exception as e:
+    st.error(f"Error loading model: {e}")
+
+vectorizer = joblib.load('Model/tfidf_vectorizer.pkl')
+>>>>>>> 42477b71eeb878d97da3c69fb0ef1ade848fa8e2
 
 # Optional: Load test data for CM (make sure this is consistent with training/test split)
 try:
